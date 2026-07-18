@@ -1,0 +1,11 @@
+.focusflow-dark
+{
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.focusflow-dark img,
+.focusflow-dark video,
+.focusflow-dark picture,
+.focusflow-dark canvas{
+    filter: invert(1) hue-rotate(180deg);
+}
