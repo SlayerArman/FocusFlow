@@ -29,7 +29,7 @@
                 "https://*/*"
             ],
             "js": [
-                "content/darMode.js",
+                "content/darkMode.js",
                 "content/notes.js",
                 "content/password.js"
             ],
