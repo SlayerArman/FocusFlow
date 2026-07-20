@@ -1,17 +1,46 @@
-:root{
+:root
+{
     --popup-width:400px;
-    --popup-height:620px;
+    --popup-height:600px;
+
+    --font-main:"Inter",sans-serif;
+
+    --radius-xs:8px;
+    --radius-sm:12px;
+    --radius-md:16px;
+    --radius-lg:20px;
+    --radius-xl:26px;
+    --radius-full:999px;
+
+    --space-1:4px;
+    --space-2:8px;
+    --space-3:12px;
+    --space-4:16px;
+    --space-5:20px;
+    --space-6:24px;
+    --space-7:32px;
+    --space-8:40px;
+
+    --shadow-sm:0 2px 8px rgba(15,23,42,.05);
+    --shadow-md:0 8px 20px rgba(15,23,42,.08);
+    --shadow-lg:0 18px 40px rgba(15,23,42,.12);
+
+    --border:#E2E8F0;
+
     --primary:#2563EB;
-    --primary-light:#3B82F6;
-    --background:#F7FAFC;
-    --surface:rgba(255,255,255,.72);
-    --text:#1E293B;
+    --primary-hover:#1D4ED8;
+    --primary-light:#EFF6FF;
+
+    --background:#F5F8FC;
+    --surface:#FFFFFF;
+    --surface-hover:#F9FBFD;
+
+    --text:#0F172A;
     --text-light:#64748B;
-    --border:rgba(255,255,255,.45);
-    --radius-xl:24px;
-    --radius-lg:18px;
-    --radius-md:14px;
-    --shadow:
-    0 10px 30px rgba(0,0,0,.08);
-    --speed:.35s;
+    --text-muted:#94A3B8;
+
+    --transition-fast:.18s ease;
+    --transition:.28s ease;
+    --transition-slow:.45s ease;
+
 }

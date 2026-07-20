@@ -1,0 +1,211 @@
+.home-page
+{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+}
+
+.hero
+{
+    position: relative;
+    min-height: 170px;
+    border-radius: 24px;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            rgba(255,255,255,.72),
+            rgba(255,255,255,.72)
+        ),
+        url("../../../assets/backgrounds/clouds.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow-md);
+}
+
+.hero-content
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 28px;
+}
+
+.hero-left
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h1
+{
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.hero-text p
+{
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.settings-button
+{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    z-index: 20;
+}
+
+.settings-button:hover
+{
+    transform:translateY(-2px);
+}
+
+.settings-button img
+{
+    width: 22px;
+}
+
+section h2
+{
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: #1E293B;
+}
+
+.quick-grid
+{
+    display: grid;
+    gap: 16px;
+}
+
+.control-card
+{
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.control-card h3
+{
+    margin-bottom: 6px;
+}
+
+.control-card p
+{
+    color: #64748B;
+    font-size: 14px;
+}
+
+.control-card-top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 30px;
+}
+
+.switch input
+{
+    display: none;
+}
+
+.slider
+{
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: #CBD5E1;
+    transition: 0.3s;
+}
+
+.slider::before
+{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 3px;
+    top: 3px;
+    border-radius: 50%;
+    background: white;
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider{
+    background: #2563EB;
+}
+
+.switch input:checked + .slider::before{
+    transform: translateX(28px);
+}
+
+.volume input
+{
+    width: 100%;
+    margin: 18px 0;
+}
+
+.volume-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volume-footer button
+{
+    border: none;
+    background: #2563EB;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.feature-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.brand
+{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo
+{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+}
