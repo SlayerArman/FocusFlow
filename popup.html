@@ -1,62 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FocusFlow</title>
-        <link rel="stylesheet" href="popup.css">s
-    </head>
+<html lang="en" data-theme="light">
 
-    <body>
-        <div class="container">
-            <header>
-                <h1>⚡ FocusFlow</h1>
-                <p>Your Productivity Companion</p>
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/app.css">
+</head>
 
-            <section class="features">
-                <button id="summarizer">
-                    📄
-                    <span>Article Summarizer</span>
-                </button>
+<body>
 
-                <button id="focus">
-                    🎯
-                    <span>Focus Mode</span>
-                </button>
+    <div id="background"></div>
 
-                <button id="notes">
-                    📝
-                    <span>Sticky Notes</span>
-                </button>
+    <div id="app">
+        <header id="header">
+            <div class="title">
+                <h1>FocusFlow</h1>
+                <p>Stay Focused. Work Smarter.</p>
+            </div>
 
-                <button id="reminders">
-                    🔔
-                    <span>Reminders</span>
-                </button>
+            <button id="themeButton">
+                🌙
+            </button>
+        </header>
 
-                <button id="pomodoro">
-                    ⏱️
-                    <span>Pomodoro</span>
-                </button>
+        <main id="view">
 
-                <button id="picker">
-                    🎨
-                    <span>Color Picker</span>
-                </button>
+        </main>
 
-                <button id="password">
-                    🔐
-                    <span>Password Strength</span>
-                </button>
-
-                <button id="darkmode">
-                    🌙
-                    <span>Dark Mode</span>
-                </button>
-            </section>
+        <div id="overlay">
         </div>
+    </div>
 
-        <script src="popup.js"></script>
-    </body>
+    <script type="module" src="src/js/app.js"></script>
+</body>
 </html>

@@ -1,0 +1,17 @@
+:root{
+    --popup-width:400px;
+    --popup-height:620px;
+    --primary:#2563EB;
+    --primary-light:#3B82F6;
+    --background:#F7FAFC;
+    --surface:rgba(255,255,255,.72);
+    --text:#1E293B;
+    --text-light:#64748B;
+    --border:rgba(255,255,255,.45);
+    --radius-xl:24px;
+    --radius-lg:18px;
+    --radius-md:14px;
+    --shadow:
+    0 10px 30px rgba(0,0,0,.08);
+    --speed:.35s;
+}

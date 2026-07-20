@@ -1,47 +1,37 @@
 {
-    "manifest_version": 3,
-    "name": "FocusFlow",
-    "version": "1.0.0",
-    "description": "An All-in-One Productivity Browser Companion with AI Tools, Notes, Focus-Mode, Reminders, Promodoro, Dark-Mode and Utilities.",
-    "permissions": [
-        "storage",
-        "activeTab",
-        "tabs",
-        "notifications",
-        "alarms",
-        "scripting"
-    ],
-    "host_permissions": [
-        "http://*/*",
-        "https://*/*"
-    ],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "action" : {
-        "default_popup": "popup.html",
-        "default_title": "FocusFlow"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "http://*/*",
-                "https://*/*"
-            ],
-            "js": [
-                "content/darkMode.js",
-                "content/notes.js",
-                "content/password.js"
-            ],
-            "css": [
-                "styles/content.css"
-            ],
-            "run_at": "document_idle"
-        }
-    ],
-    "icons": {
-        "16": "assets/icon16.png",
-        "48": "assets/icon48.png",
-        "128": "assets/icon128.png"
-    }
+  "manifest_version": 3,
+
+  "name": "FocusFlow",
+
+  "description": "Your All-in-One Productivity Browser Companion.",
+
+  "version": "1.0.0",
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FocusFlow"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "scripting",
+    "notifications",
+    "alarms"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "icons": {
+    "16": "assets/logo/icon16.png",
+    "48": "assets/logo/icon48.png",
+    "128": "assets/logo/icon128.png"
+  }
 }
