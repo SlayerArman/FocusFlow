@@ -33,11 +33,6 @@ export function renderHome() {
 
     <div class="home-page">
         <section class="hero">
-        <button class="settings-button">
-                    <img
-                        src="assets/icons/controls/settings.svg"
-                        alt="Settings">
-                </button>
            <div class="hero-content">
                 <div class="hero-left">
                     <div class="brand">

@@ -20,3 +20,4 @@ export function createFeatureCard(data)
         </button>
     `;
 }
+
