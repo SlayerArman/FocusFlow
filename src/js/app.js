@@ -1,9 +1,8 @@
-import { loadPage } from "./router.js";
+import {navigate} from "./router.js";
 
-function startApp() {
-
-    loadPage("home");
-
+function startApp()
+{
+    navigate("home");
 }
 
 startApp();

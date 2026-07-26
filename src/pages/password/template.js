@@ -15,7 +15,7 @@ export function passwordTemplate()
                 <input
                     id="passwordInput"
                     type="password"
-                    placegolder="Enter your password"
+                    placeholder="Enter your password"
                     >
                     <button id="togglePassword">
                         👁
@@ -25,7 +25,7 @@ export function passwordTemplate()
             <div class="strength-bar">
                 <div
                     id="strengthFill"
-                    class="strenght-fill">
+                    class="strength-fill">
                 </div>
             </div>
 

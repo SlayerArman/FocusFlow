@@ -9,6 +9,13 @@ export function renderHome() {
         },
 
         {
+            title: "Password Strength",
+            description: "...",
+            page: "password",
+            icon: "assets/icons/features/password.svg"
+        },
+
+        {
             title: "Sticky Notes",
             description: "Notes attached to every website.",
             page: "notes",
@@ -22,12 +29,6 @@ export function renderHome() {
             icon: "assets/icons/features/focus.svg"
         },
 
-        {
-            title: "Pomodoro",
-            description: "25 minute productivity timer.",
-            page: "pomodoro",
-            icon: "assets/icons/features/pomodoro.svg"
-        }
     ];
     return `
 
