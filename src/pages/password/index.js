@@ -1,6 +1,6 @@
 import {passwordTemplate} from "./template.js";
 import {analyzePassword} from "./password.js";
-import { navigate } from "../../js/router.js";
+import {navigate} from "../../js/router.js";
 
 export function renderPassword()
 {
@@ -13,6 +13,7 @@ export function initPassword()
     const fill = document.getElementById("strengthFill");
     const text = document.getElementById("strengthText");
     const toggle = document.getElementById("togglePassword");
+    const back = document.querySelector(".back-button");
 
     if (!input) return;
     input.addEventListener("input", () => {
@@ -25,6 +26,10 @@ export function initPassword()
             input.type === "password"
                 ? "text"
                 : "password";
+    });
+
+    back.addEventListener("click", () => {
+        navigate("home");
     });
 
     function updateStrength(result)
