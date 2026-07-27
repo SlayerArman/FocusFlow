@@ -1,5 +1,6 @@
 import {renderHome} from "../pages/home/index.js";
 import {renderPassword, initPassword} from "../pages/password/index.js";
+import { renderColorPicker, initColorPicker} from "../pages/colorpicker/index.js";
 
 const routes = {
     home: {
@@ -8,7 +9,12 @@ const routes = {
     password: {
         render: renderPassword,
         init: initPassword
-    }
+    },
+
+    colorpicker: {
+        render: renderColorPicker,
+        init: initColorPicker
+    },
 };
 
 export function navigate(page)

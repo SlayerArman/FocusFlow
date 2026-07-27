@@ -12,20 +12,28 @@ export function colorPickerTemplate()
             <input
                 type="color"
                 id="picker"
-                value="#2563EB"
-            >
+                value="#2563EB">
             <div class="color-preview">
                 <div
                     id="preview"
                     class="preview-box"
                     style="background:#2563EB;">
                 </div>
+
+                <label>HEX</label>
+
                 <input
                     id="hexValue"
                     readonly
-                    value="#2563EB"
-                >
+                    value="#2563EB">
             </div>
+
+            <label>RGB</label>
+
+            <input
+            id="rgbValue"
+            readonly>
+
             <button id="copyColor">
                 Copy HEX
             </button>

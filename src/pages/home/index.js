@@ -2,10 +2,10 @@ import { createFeatureCard } from "../../components/card/card.js";
 export function renderHome() {
     const features = [
         {
-            title: "Article Summarizer",
-            description: "Summarize any webpage instantly.",
-            page: "summarizer",
-            icon: "assets/icons/features/article.svg"
+            title: "Color Picker",
+            description: "Pick and copy website colors.",
+            page: "colorpicker",
+            icon: "assets/icons/features/colorpicker.svg"
         },
 
         {
