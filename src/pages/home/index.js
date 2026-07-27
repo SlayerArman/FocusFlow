@@ -10,7 +10,7 @@ export function renderHome() {
 
         {
             title: "Password Strength",
-            description: "...",
+            description: "Check your password strength",
             page: "password",
             icon: "assets/icons/features/password.svg"
         },
