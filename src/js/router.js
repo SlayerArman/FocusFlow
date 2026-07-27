@@ -1,18 +1,25 @@
 import {renderHome} from "../pages/home/index.js";
-import {renderPassword} from "../pages/password/index.js";
+import {renderPassword, initPassword} from "../pages/password/index.js";
 
 const routes = {
-    home: renderHome,
-    password: renderPassword
+    home: {
+        render: renderHome
+    },
+    password: {
+        render: renderPassword,
+        init: initPassword
+    }
 };
 
 export function navigate(page)
 {
     const view = document.getElementById("view");
-    if (!routes[page]) return;
-    view.innerHTML = routes[page]();
+    const route = routes[page];
+    if (!route) return;
+    view.innerHTML = route.render();
+    if (route.init)
+        route.init();
     attachEvents(page);
-
 }
 
 function attachEvents(page)
